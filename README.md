@@ -104,3 +104,14 @@ Now we'll be using Inertia to render our page using Vue.js.
 For better results, I recommend you to stop npm and run 'npm run dev' again.
 
 As yout may or may not have noticed (I personally didn't at first) but our app menu doesn't have a link to our newest Chirp page, we're now going to add it.
+
+## Chirps: Creating a relationship
+
+We added logic to the Chirps::store method.
+Do you remember that Laravel take care of the database? We'll see that in action now, on the previous step we added the line:
+
+```php
+$request->user()->chirps()
+```
+
+It's a database relationship right there. We're going to add it to the User model.
