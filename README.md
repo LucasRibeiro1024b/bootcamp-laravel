@@ -142,3 +142,7 @@ tinker is a CLI program that we can use to interact with our laravel app via ter
 ```bash
 Chirp::all();
 ```
+
+## Showing Chirps
+
+Fun fact: I probably mistyped something and ended up working for almost an hour trying to figure it out what caused my pages to return blank if everything was the same, why my Chirp page isn't showing my Chirps if everything is same? Well, I still have no idea 😁 I stashed every change I made, and then started all over again, and boom! Everything is working fine.
