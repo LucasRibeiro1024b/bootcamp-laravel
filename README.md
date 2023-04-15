@@ -115,3 +115,8 @@ $request->user()->chirps()
 ```
 
 It's a database relationship right there. We're going to add it to the User model.
+
+## Mass Assign Protection
+
+It's seems that passing all data to the Model can be dangerous, when sensible data can be acessed like if we've a "is_admin" column, it'd be editable.
+To prevent that we're gonna add a layer of protection.
