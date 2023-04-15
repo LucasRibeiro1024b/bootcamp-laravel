@@ -47,7 +47,7 @@ I chose Vue.js for this section and beyond.
 
 Be mindful that laravel/breeze manages the front-end, that said recall it everytime you went to modify the fron-end.
 
-Now run npm Vite module to "hot-module replacement", that means your changes in the code goes direct to the page, it gonna reload as you change.
+Now run npm Vite module to "hot-module replacement", that means your changes in the code goes direct to the page, it gonna reload as you change it.
 
 ```bash
     npm install
