@@ -120,3 +120,25 @@ It's a database relationship right there. We're going to add it to the User mode
 
 It's seems that passing all data to the Model can be dangerous, when sensible data can be acessed like if we've a "is_admin" column, it'd be editable.
 To prevent that we're gonna add a layer of protection.
+
+## Migration
+
+We added a relationship between User and Chirps and also the Chirps Model, but our database didn't receive that until now. We're gonna update our Chirps Migration class.
+Now that we have our migration file updated. Let's check our class integration with the database using Laravel Tinker library.
+Before all run
+
+```bash
+composer dumpautoload
+```
+
+since we added some classes and files, let's make composer update our autoloader to laraverl. After that we gonna run
+
+```bash
+php artisan tinker
+```
+
+tinker is a CLI program that we can use to interact with our laravel app via terminal. Now inside the tinker app, let's run the following command to see all Chirps stored so far:
+
+```bash
+Chirp::all();
+```
