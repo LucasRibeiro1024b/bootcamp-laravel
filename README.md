@@ -22,4 +22,18 @@ You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 
-## Laravel Bootcamp
+# Laravel Bootcamp
+
+## Quick Installation
+
+```bash
+    composer create-project laravel/laravel chirper
+    cd chirper
+    php artisan serve
+```
+
+After that change on .env the DB_CONNECTION to sqlite and delete all other DB_* options.
+
+I did the installation using laragon evironment, but you can use docker as well, just follow the bootcamp guide. 😉
+
+## Installing Laravel Breeze
