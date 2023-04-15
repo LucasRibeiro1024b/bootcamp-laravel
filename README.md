@@ -37,3 +37,27 @@ After that change on .env the DB_CONNECTION to sqlite and delete all other DB_* 
 I did the installation using laragon evironment, but you can use docker as well, just follow the bootcamp guide. 😉
 
 ## Installing Laravel Breeze
+
+I chose Vue.js for this section and beyond.
+
+```bash
+    composer require laravel/breeze --dev
+    php artisan breeze:install vue
+```
+
+Be mindful that laravel/breeze manages the front-end, that said recall it everytime you went to modify the fron-end.
+
+Now run npm Vite module to "hot-module replacement", that means your changes in the code goes direct to the page, it gonna reload as you change.
+
+```bash
+    npm install
+    npm run dev
+```
+
+Laravel Artisan also takes care of the Database, run:
+
+```bash
+    php artisan migrate
+```
+
+to commit the local configuration of tables to the database. (sqlite in our case)
