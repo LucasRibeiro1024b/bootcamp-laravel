@@ -98,3 +98,7 @@ to check all routes on right now, run:
 php artisan route:list
 ```
 
+## Routing: Inertia
+
+Now we'll be using Inertia to render our page using Vue.js.
+For better results, I recommend you to stop npm and run 'npm run dev' again.
