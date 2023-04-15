@@ -27,9 +27,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## Quick Installation
 
 ```bash
-    composer create-project laravel/laravel chirper
-    cd chirper
-    php artisan serve
+composer create-project laravel/laravel chirper
+cd chirper
+php artisan serve
 ```
 
 After that change on .env the DB_CONNECTION to sqlite and delete all other DB_* options.
@@ -41,8 +41,8 @@ I did the installation using laragon evironment, but you can use docker as well,
 I chose Vue.js for this section and beyond.
 
 ```bash
-    composer require laravel/breeze --dev
-    php artisan breeze:install vue
+composer require laravel/breeze --dev
+php artisan breeze:install vue
 ```
 
 Be mindful that laravel/breeze manages the front-end, that said recall it everytime you went to modify the fron-end.
@@ -50,14 +50,40 @@ Be mindful that laravel/breeze manages the front-end, that said recall it everyt
 Now run npm Vite module to "hot-module replacement", that means your changes in the code goes direct to the page, it gonna reload as you change it.
 
 ```bash
-    npm install
-    npm run dev
+npm install
+npm run dev
 ```
 
 Laravel Artisan also takes care of the Database, run:
 
 ```bash
-    php artisan migrate
+php artisan migrate
 ```
 
 to commit the local configuration of tables to the database. (sqlite in our case)
+
+## Creating Chirps
+
+Chirps are short messages here.
+
+### Models, Migrations and Controllers
+
+This command is used to create a "Model, Migration and Controller".
+
+```bash
+artisan make:model
+```
+
+Now let's make our Chirp files.
+
+```bash
+php artisan make:model -mrc Chirp
+```
+
+By looking at the
+
+```bash
+php artisan make:model --help
+```
+
+We could see that the -mrc option means that artisan will create a migration, a model, and a resource controller named Chirp.
