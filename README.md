@@ -150,8 +150,15 @@ Fun fact: I probably mistyped something and ended up working for almost an hour 
 Within the Chirps Controller we're now using Eloquents method to retrieve data from the Database. Before we add a hasMany relantionship between User and Chirps, now we just made the opposite by adding a BelongsTo relantionship between the Chirp and the User.
 
 Laravel may take too much time to show changes in the Front-end, it may the cause of my previous trouble, to overcome it I'm running:
+
 ```bash
 npm run build
 npm run dev
 ```
+
+## Editing Chirps
+
+Only now that I figured out that this whole bootcamp is intended to build a twitter-like app. 😅 Now everything makes sense, and I only got it because of the first comment of this section.
+
+> "bird-themed microblogging platforms"
 
