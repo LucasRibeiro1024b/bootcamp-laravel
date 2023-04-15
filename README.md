@@ -87,3 +87,14 @@ php artisan make:model --help
 ```
 
 We could see that the -mrc option means that artisan will create a migration, a model, and a resource controller named Chirp.
+
+## Routing
+
+We'll be adding two routes in our app, the index route to show Chirp form and the store route to save the Chirp. Now breeze comes in hand with the Auth middleware, we'll be using it too.
+
+to check all routes on right now, run:
+
+```bash
+php artisan route:list
+```
+
