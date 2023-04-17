@@ -162,3 +162,11 @@ Only now that I figured out that this whole bootcamp is intended to build a twit
 
 > "bird-themed microblogging platforms"
 
+## Deleting Chirps
+
+Again we're going to add the new route in the web.php routes and add logic to its Controller equivalent method.
+
+## Authorization
+
+Let's add to our ChirpPolicy what to do when a user is going to delete it. If you notice we're using the update() method again, it's because rather then adding a new method we're reusing the update method, if a user can edit it they also can delete it.
+For some reason my Laravel app isn't updating as I change the code. (see that later, may be some cache..)
